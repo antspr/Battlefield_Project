@@ -6,7 +6,8 @@ class Weapon:
         self.power = attack_power
 
     def set_weapon(self):
-        self.name = input('Weapon name:  ')
+        name = input('Weapon name:  ')
         self.power = int(input('Weapon strength: '))
-        print('Weapon Accepted!')
+        return name, self.power
+        
 
