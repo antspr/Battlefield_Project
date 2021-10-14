@@ -1,9 +1,14 @@
+from weapon import Weapon
 class Dinosaur:
     def __init__(self, name, attack_power):
         self.name = name
-        self.attack = int(attack_power)
-        self.health = 0
+        self.power = Weapon()
+        self.health = 100
 
-    def attack(self, robot):
-        pass
+    def arm_dino(self):
+         self.name = input('Dinosaur Name: ')
+         self.power = Weapon.set_weapon.power 
+    
+    # def attack(self, robot):
+    #     pass
     
