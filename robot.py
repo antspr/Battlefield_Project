@@ -3,8 +3,8 @@ class Robot:
     
     def __init__(self, name):
         self.name = name
-        self.health = 100
-        self.weapon = Weapon.set_weapon(self)
+        self.health = int
+        self.weapon = []
 
     def attack(self, dinosaur):
         dinosaur = ''
