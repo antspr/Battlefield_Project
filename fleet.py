@@ -8,10 +8,7 @@ class Fleet:
         robot_one = Robot('Antoine')
         robot_two = Robot('Mike')
         robot_three = Robot('Jimmy')
-        
-        self.fleet.append(robot_one)
-        self.fleet.append(robot_two)
-        self.fleet.append(robot_three)
+        robot_fleet = [robot_one,robot_two,robot_three]
+        robot_fleet == self
        
-        
-        return self.fleet
+        return self
