@@ -1,3 +1,4 @@
+from dinosaur import Dinosaur
 from fleet import Fleet
 from herd import Herd
 
@@ -12,16 +13,36 @@ class Battlefield :
         self.herd = Herd.create_herd(self)
 
     def display_welcome(self):
-        print('Welcome to Battlefield: Robots vs Dinos')
+        return 'Welcome to Battlefield: Robots vs Dinos'
 
     def battle(self):
-        pass
+        robots = []
+        dinos = []
+        for robot in robots:
+            robots += range(0,len(robots)-1)
+        for dino in dinos:
+            dinos += range(0,len(dinos))
+        return robots, dinos
 
     def dino_turn(self, dinosaur):
-        pass
-
+        dino_turn = True
+        while dino_turn == True :
+            herd_index = 0
+            for dinosaur in self.herd:
+                herd_index += 1
+                break
+            return self.herd[herd_index]
+        dino_turn == False
+        
     def robot_turn(self, robot):
-        pass
+        robot_turn = True
+        while robot_turn == True :
+            fleet_index = 0
+            for robot in self.herd:
+                fleet_index += 1
+                break
+            return self.herd[fleet_index]
+        robot_turn == False
 
     def show_dino_opponent_option(self):
         pass

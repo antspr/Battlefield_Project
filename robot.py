@@ -7,7 +7,7 @@ class Robot:
         self.weapon = []
 
     def attack(self, dinosaur):
-        dinosaur = ''
+        self.weapon = Weapon.set_weapon(self)
         
         
 
